@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+       body {
+            background-color: rgb(226, 18, 18);
+            color: blue;
+            font: 20px sans serif;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <script>
+
+  var nome = window.prompt('digite seu nome')
+    document.write('seja bem vindo, ' + nome  + ', ao curso de js!'),
+    document.write(`<br>seu nome tem ${nome.length} letras.</br>`)
+    document.write(`<h4>seu nome tem ${nome.length} letras.</h4>`)
+    document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras.`)   
+    document.write(`<br>Seu nome em maiúsculas é ${nome.toUpperCase()}.</br>`)    
+    document.write(`<br>Seu nome em minúsculas é ${nome.toLowerCase()}.</br>`)
+  
+ var Salario = 12500.5
+    document.write(`<br>Seu salário é R$${Salario.toFixed(2)}.</br>`)
+    document.write(`<br>Seu salário é R$${Salario.toFixed(2).replace('.',',')}.</br>`)
+    document.write(`<br>Seu salário é ${Salario.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})}.</br>`) 
+
+ 
+
+   </script>
+</body>
+</html>
