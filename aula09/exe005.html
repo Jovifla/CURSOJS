@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #dd1010;
+            color: #fcfbfb;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos do DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div class="msg">Clique em mim!</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1];
+        var p = window.document.getElementsByTagName('p')[0];
+        window.document.write('Está escrito assim: ' +p1.innerHTML);
+        window.document.write('<br>Está escrito assim: ' +p.innerText);
+        p1.style.backgroundColor = 'black';
+        p.style.backgroundColor = 'yellow';
+        p.style.color = 'black';
+        p1.style.color = 'blue';
+        //var corpo = window.document.body;
+       // corpo.style.background = 'green';
+       //window.alert(p1.innerHTML);
+       //var div = window.document.getElementById('msg');
+       //div.style.color = 'green';
+       //div.innerHTML = ' Olá Novo texto aqui aguardando instruções... ';
+       //window.document.getElementById('msg').innerText = 'Novo texto aqui'; 
+       //var div2 = window.document.getElementsByName('msg')[0];  
+       //div2.style.color = 'blue';
+       //div2.style.backgroundColor = 'white';
+       //div2.innerText = 'Novo texto aqui com getElementsByName'; 
+        var div = window.document.getElementsByClassName('msg')[0];
+        div.innerHTML = 'texto aqui com getElementsByName';  
+        div.style.color = 'red';
+        div.style.backgroundColor = 'yellow'; 
+    </script>
+</body>
+</html>
